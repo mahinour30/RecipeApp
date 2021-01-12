@@ -22,7 +22,17 @@ const App = ()=> {
 
   return (
     <div className="App">
-      <Recipe/>
+      <form className='search-form'>
+        <input className='search-bar' type='text'/>
+        <button className='search-btn' type='submit'>Search</button>
+      </form>
+      {recipes.map(recipe =>(
+        <Recipe
+        title={recipe.recipe.label}
+        calories={recipe.recipe.calories}
+        image={recipe.recipe.image}
+        />
+      ))}
     </div>
   );
 }
