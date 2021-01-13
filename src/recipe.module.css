@@ -7,7 +7,7 @@
     justify-content: space-around;
     background: white;
     align-items: center;
-    min-width: 40%;
+    width: 40%;
     padding-bottom: 50px;
 }
 
@@ -21,6 +21,9 @@
 }
 .image{
     border-radius: 10%;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
